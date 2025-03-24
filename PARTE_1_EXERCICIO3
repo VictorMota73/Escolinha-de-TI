@@ -1,0 +1,18 @@
+using System;
+    
+namespace MyApplication
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int a = 7;
+            int[] v = new int[7];
+            for(int b=a-6; b<a; b=b+2)
+            {
+                v[b] = b + a;
+                Console.WriteLine(v[b]);
+            }
+        }
+    }
+}
