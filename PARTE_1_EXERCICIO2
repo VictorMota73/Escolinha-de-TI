@@ -1,0 +1,17 @@
+using System;
+
+namespace MyApplication
+{
+    class Program
+    {
+        static void Main(string[] args)
+        { 
+            int[] v = new int[6];
+            for (int a=2; a<6; a++)
+            {
+                v[a] = 10 * a;
+                Console.WriteLine(v[a]);
+            }
+        }
+    }
+}
