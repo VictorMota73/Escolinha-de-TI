@@ -1,0 +1,26 @@
+using System;
+using System.Globalization;
+
+namespace MyApplication
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Digite o valor do Valor Presente: ");
+            double VP = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            Console.Write("Digite o valor da Taxa de Juros: ");
+            double Juros = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            double porcent = Juros / 100;
+            Console.Write("Informe o periodo (ano): ");
+            int Periodo = int.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            float SomaBosta = (float)(1 + porcent);
+            double FP = VP * (Math.Pow(SomaBosta, Periodo));
+            Console.WriteLine($"Periodo é {Periodo}");
+            Console.WriteLine($"O Valor Presente é {VP:F2}");
+            Console.WriteLine($"Os Juros são {porcent}");
+            Console.WriteLine($"O Valor Futuro é {FP:F2}");
+
+        }
+    }
+}
