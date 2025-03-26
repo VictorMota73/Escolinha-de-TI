@@ -1,0 +1,30 @@
+using System;
+using System.Globalization;
+using static System.Net.Mime.MediaTypeNames;
+namespace MyApplication
+{
+   class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Me diga o Valor Presente: ");
+            double ValorP= double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            Console.WriteLine("Me diga o Valor da Taxa em %: ");
+            double TaxaPct = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            double Porcento = TaxaPct / 100;
+            Console.WriteLine("Me diga o Periodo em mês: ");
+            int Periodo = int.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            for (int cont=0; cont<Periodo;cont++)
+            {
+                double Soma = 1 + Porcento;
+                double ValorF = (ValorP * (Math.Pow(Soma, cont)));
+                double RendLiq = ValorF - ValorP;
+                double rendAcmld = RendLiq + ValorP;
+                Console.WriteLine($"Periodo: {cont}");
+                Console.WriteLine($"Rendimento de : {ValorF:F2}");
+                Console.WriteLine($"Rendimento Liquido de: {RendLiq:F2}");
+                Console.WriteLine($"Rendimento Acumulado: {rendAcmld:F2}");
+            }
+        }
+    }
+}
