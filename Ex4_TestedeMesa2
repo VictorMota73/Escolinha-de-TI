@@ -1,0 +1,48 @@
+using System;
+using System.Diagnostics;
+using System.Globalization;
+using static System.Net.Mime.MediaTypeNames;
+namespace MyApplication
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Me diga o Valor Presente: ");
+            double ValorP = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            Console.WriteLine("Me diga o Valor da Taxa em %: ");
+            double TaxaPct = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            double Porcento = TaxaPct / 100;
+            Console.WriteLine("Me diga o Periodo em mês: ");
+            double retirei = ValorP;
+            int Periodo = int.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            for (int cont = 0; cont < Periodo; cont++)
+            {
+
+                double Soma = 1 + Porcento;
+                double ValorF = (retirei * (Math.Pow(Soma, cont)));
+                double RendLiq = ValorF - retirei;
+                double rendAcmld = RendLiq + retirei;
+                Console.WriteLine($"Periodo: {cont}");
+                Console.WriteLine($"Rendimento de : {ValorF:F2}");
+                Console.WriteLine($"Rendimento Liquido de: {RendLiq:F2}");
+                Console.WriteLine($"Rendimento Acumulado: {rendAcmld:F2}");
+                Console.WriteLine("Gostaria de fazer retirada?(Sim ou Não)");
+                string retirada = Console.ReadLine();
+                if (retirada == "Sim" || retirada == "sim")
+                {
+                    Console.WriteLine("Diga o quanto você quer retirar: ");
+                    double retirar = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                    retirei = ValorP - retirar;
+                    double saia =rendAcmld - retirar;
+                    Console.WriteLine($"Retirada {retirar:F2}");
+                    Console.WriteLine($"Saldo :{saia:F2}");
+                }
+                else
+                {
+                   
+                }
+            }
+        }
+    }
+}
