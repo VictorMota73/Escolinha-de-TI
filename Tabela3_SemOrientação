@@ -1,0 +1,87 @@
+using System;
+using System.Diagnostics.CodeAnalysis;
+using System.Globalization;
+using System.Runtime.Intrinsics.Arm;
+using System.Security.Cryptography;
+using System.Collections.Generic;
+using static System.Net.Mime.MediaTypeNames;
+namespace MyApplication
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Informe a quantidade de investimentos que pretende fazer:");
+            int QtdV=int.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            for (int i = 0; i < QtdV; i++)
+            {
+                List<double> Lindona = new List<double>();
+                List<double> Bonitona = new List<double>();
+                List<double> Caliquinha = new List<double>();
+                Console.WriteLine("Informe o valor presente: ");
+                double ValorP = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                double Retirar = ValorP;
+                Console.WriteLine("Informe a Taxa em %: ");
+                double Taxinha = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                double porcent = Taxinha / 100;
+                Console.WriteLine("Informe a quantidade de meses: ");
+                int Mes = int.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                Console.WriteLine("Informe a quantidade de dias (caso não tenha coloque 0): ");
+                int Dia = int.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                double TaxinhaDays = porcent / 30;
+
+                double SomaBosta = 0;
+                double ValorF = 0;
+                double RendaLqd = 0;
+                double RendaAcmld = 0;
+
+                for (int cont = 0; cont < Mes; cont++)
+                {
+
+                    TaxinhaDays = porcent / 30;
+
+                    SomaBosta = 1 + porcent;
+                    ValorF = Retirar * (Math.Pow(SomaBosta, cont));
+                    RendaLqd = ValorF - Retirar;
+                    RendaAcmld = RendaLqd + Retirar;
+                    if (cont >= 1)
+                    {
+                        if (Dia != 0)
+                        {
+                            double SomaLixo = TaxinhaDays + 1;
+                            double Diario = ValorP * (Math.Pow(SomaLixo, Dia));
+                            ValorF += Diario - ValorP;
+                        }
+                    }
+                    Lindona.Add(ValorF);
+                    Bonitona.Add(RendaLqd);
+                    Caliquinha.Add(RendaAcmld);
+                    Console.WriteLine($"Periodo: {cont}");
+                    Console.WriteLine($"Rendimento de : {ValorF:F2}");
+                    Console.WriteLine($"Rendimento Liquido de: {RendaLqd:F2}");
+                    Console.WriteLine($"Rendimento Acumulado: {RendaAcmld:F2}");
+                    Console.WriteLine("Deseja fazer retirada?");
+                    string Informe = Console.ReadLine();
+                    if (Informe == "Sim" || Informe == "sim")
+                    {
+                        Console.WriteLine("Informe o quanto quer retirar?");
+                        double retiro = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                        Retirar = ValorP - retiro;
+                        double vaza = RendaAcmld - retiro;
+                        vaza = Retirar;
+                        Console.WriteLine($"Valor retirado{retiro:F2}");
+                        Console.WriteLine($"Saldo:{vaza:F2}");
+                    }
+
+                }
+
+                for (int i2 = 0; i2 < Mes; i2++)
+                {
+                    Console.WriteLine($"|Mês: {i2 + 1}|\tRenda Acumulada: {Caliquinha[i2]:F2}|\tRenda Liquida: {Bonitona[i2]:F2}|\tValor Final: {Lindona[i2]:F2}|");
+                }
+            }
+        }
+    }
+    
+}
