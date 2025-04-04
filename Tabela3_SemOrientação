@@ -30,17 +30,15 @@ namespace MyApplication
                 Console.WriteLine("Informe a quantidade de dias (caso não tenha coloque 0): ");
                 int Dia = int.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
                 double TaxinhaDays = porcent / 30;
-
                 double SomaBosta = 0;
                 double ValorF = 0;
                 double RendaLqd = 0;
                 double RendaAcmld = 0;
 
-                for (int cont = 0; cont < Mes; cont++)
+                for (int cont = 0; cont <= Mes; cont++)
                 {
 
                     TaxinhaDays = porcent / 30;
-
                     SomaBosta = 1 + porcent;
                     ValorF = Retirar * (Math.Pow(SomaBosta, cont));
                     RendaLqd = ValorF - Retirar;
@@ -76,9 +74,9 @@ namespace MyApplication
 
                 }
 
-                for (int i2 = 0; i2 < Mes; i2++)
+                for (int i2 = 0; i2 <= Mes; i2++)
                 {
-                    Console.WriteLine($"|Mês: {i2 + 1}|\tRenda Acumulada: {Caliquinha[i2]:F2}|\tRenda Liquida: {Bonitona[i2]:F2}|\tValor Final: {Lindona[i2]:F2}|");
+                    Console.WriteLine($"|Mês: {i2}|\tRenda Acumulada: {Caliquinha[i2]:F2}|\tRenda Liquida: {Bonitona[i2]:F2}|\tValor Final: {Lindona[i2]:F2}|");
                 }
             }
         }
