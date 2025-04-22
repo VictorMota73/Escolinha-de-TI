@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatálogoIrado</title>
+    <link rel="stylesheet" href="irado.css">
+</head>
+<body>
+    <header>
+        <div class="content">
+            <nav>
+                <p class="brand">Super<strong>HQs</strong></p>
+                <ul>
+                    <li><a href="#catalog">Catálogo</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#features">Feature</a></li>
+                    <button>Login</button>
+                </ul>
+            </nav>
+            <div class="header-block">
+               <div class="text">
+               <h2>Aqui temos os melhores quadrinhos pra você</h2>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum doloribus nulla consectetur ad fuga tenetur.</p>
+               </div>
+               <img src="images/AmazingFantasy15.jpg" alt="HQ1">
+           </div>
+        </div>
+    </header>
+    <section class="catalog" id="catalog">
+       <div class="content">
+            <div class="tittle-wrapper-catalog"> temos tudos os quadrinhos e mangas que precisa</p>
+                <h3>Catálogo</h3>
+            </div>
+                <div class="filter-card">
+                    <input 
+                     type="text"
+                     class="search-input"
+                     placeholder="choose your favorite model"
+                    />
+                    <button class="search-button">Buscar</button>
+                </div>
+                <div class="card-wrapper">
+                    <div class="card-item">
+                        <img src="images/Invencivel-HQ-1.jpg" alt="Invencible01"/>
+                        <div class="card-content">
+                            <h3>Invencivel #01</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis!</p>
+                            <button type="button">Comprar</button>
+                        </div>
+                    </div> <div class="card-item">
+                        <img src="images/ZéCarioca2165.png" alt="ZeCarioca"/>
+                        <div class="card-content">
+                            <h3>Zé Carioca #2165</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident!</p>
+                            <button type="button">Comprar</button>
+                        </div>
+                    </div> <div class="card-item">
+                        <img src="images/Spider-Man33.jpg" alt="SpiderMan33"/>
+                        <div class="card-content">
+                            <h3>Homem-Aranha #33</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem.</p>
+                            <button type="button">Comprar</button>
+                        </div>
+                    </div> <div class="card-item">
+                        <img src="images/DragonBall01.jpg" alt="DragonBall01"/>
+                        <div class="card-content">
+                            <h3>Dragon Ball #01</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos?</p>
+                            <button type="button">Comprar</button>
+                        </div>
+                    </div> <div class="card-item">
+                        <img src="images/FortinteGZ04.jpg" alt="FortinteGz04"/>
+                        <div class="card-content">
+                            <h3>Fortine Guerra Zero #04</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam!</p>
+                            <button type="button">Comprar</button>
+                        </div>
+                    </div> <div class="card-item">
+                        <img src="images/X-Men136.avif" alt="X-men136"/>
+                        <div class="card-content">
+                            <h3>X-Men #136</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime.</p>
+                            <button type="button">Comprar</button>
+                        </div>
+                    </div> <div class="card-item">
+                        <img src="images/WW01.jpg" alt="MM01"/>
+                        <div class="card-content">
+                            <h3>Mulher Maravilha #01</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime.</p>
+                            <button type="button">Comprar</button>
+                        </div>
+                    </div> <div class="card-item">
+                        <img src="images/Superman01.jpg" alt="Superman01"/>
+                        <div class="card-content">
+                            <h3>Superman #01</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime.</p>
+                            <button type="button">Comprar</button>
+                        </div>
+                    </div> <div class="card-item">
+                        <img src="images/AmazingFantasy15.jpg" alt="AmazingFantasy15"/>
+                        <div class="card-content">
+                            <h3>Amazing Fantasy #15</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime.</p>
+                            <button type="button">Comprar</button>
+                        </div>
+                    </div> <div class="card-item">
+                        <img src="images/Spawn01.jpg" alt="Spawn01"/>
+                        <div class="card-content">
+                            <h3>Spawn #01</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime.</p>
+                            <button type="button">Comprar</button>
+                        </div>
+                  </div> <div class="card-item">
+                      <img src="images/LeiaSTWRS.jpg" alt="LeiaStrWrs01"/>
+                     <div class="card-content">
+                            <h3>Star Wars-Princesa Leia #01</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime.</p>
+                            <button type="button">Comprar</button>
+                     </div>
+                 </div>
+                 <div class="card-item">
+                    <img src="images/BatmanCTDefinitivo.jpg" alt="BatmanED"/>
+                   <div class="card-content">
+                          <h3>Batman Cavaleiro das Trevas: Edição Definitiva</h3>
+                          <p>Lorem ipsum dolor sit anconsectetur.</p>
+                          <button type="button">Comprar</button>
+                   </div>
+               </div>
+             </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="content">
+            <div class="tittle-wrapper-about">
+                <p>conheça mais um pouco sobre nós</p>
+                <h3>Sobre</h3>
+            </div>
+           <div class="about-content">
+            <div class="left">
+                <img src="images/LogoCertapng.png" alt="Logo"/>
+            </div>
+            <div class="right">
+                <h3>Entre no melhor dos mundos da ficção</h3>
+                <p>
+                    Lorem ipsum dolor sit, amet consectet
+                    ur adipisicing elit. Odio alias dolorum dolore, 
+                    nulla doloribus laborum sequi temporibus.
+                    Velit nobis tempore voluptatum, vel doloremque voluptatibus! Iusto accusamus
+                    id vero esse magni assumenda quae eius repudiandae. Laborum,
+                    assumenda quam! Reiciendis consectetur quos saepe eveniet, 
+                    cum eligendi! Alias nobis dolorum id minus dolorem aspernatur similique voluptatem!
+                    Ipsum fugiat quos, nulla, totam laborum omnis minus porro illo provident fuga, ratione ut!
+                    Ipsa veniam molestias quidem voluptatem fugit dicta.
+                    Harum ipsum provident enim error illum numquam sit obcaecati ex voluptat
+                    em odit, vero voluptates fuga in est d
+                    ignissimos nobis, adipisci odio. Dolorum 
+                    quaerat eius hic ratione?
+                </p>
+           </div>
+         </div>
+        </div>
+    </section>
+    <section class="feature" id="features">
+            <div class="content">
+                <div class="tittle-wrapper-feature">
+                    <p>Blá Blá Blá</p>
+                    <h3>Blé Blé Blé</h3>
+                </div>
+                <div class="feature-card-block">
+                    <div class="feature-card-item">
+                        <img src="images/Bang.png" alt="Bang"/>
+                        <div class="feature-text-content">
+                          <h3>Titulo</h3>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                       </div>
+                    </div>
+                    <div class="feature-card-item">
+                        <img src="images/Boom.png" alt="Boom"/>
+                        <div class="feature-text-content">
+                          <h3>Titulo</h3>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="feature-card-item">
+                      <img src="images/Wham.png" alt="Wham"/>
+                       <div class="feature-text-content">
+                          <h3>Titulo</h3>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                       </div>
+                    </div>
+                    <div class="feature-card-item">
+                     <img src="images/Zap.png" alt="Zap"/>
+                       <div class="feature-text-content">
+                          <h3>Titulo</h3>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                       </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="main">
+            <div class="content footer-links">
+                <div class="footer-company">
+                    <h4>SuperHQs</h4>
+                    <h6>Sobre</h6>
+                    <h6>Contato</h6>
+                </div>
+                <div class="footer-rental">
+                     <h4>Serviços</h4>
+                     <h6>Política de privacidade</h6>
+                     <h6>Termos e Condições</h6>
+                     <h6>Ajuda</h6>
+                </div>
+                <div class="footer-social">
+                     <h4>Redes sociais</h4>
+                     <div class="social-icon">
+                            <img src="images/youtube.png" alt="Youtube">
+                            <img src="images/twitter.png" alt="EscóriadaHumanidade">
+                            <img src="images/instagram.png" alt="Insta">
+                     </div>
+                </div>
+                <div class="footer-contact">
+                    <h4>Entre em contato</h4>
+                    <h6>cantatolegal@SuperHqs.com.br</h6>
+                    <h6>+55 41 9293-8936</h6>
+                </div>
+            </div>
+        </div>
+        <div class="last">
+            SuperHQs 2024 - A melhor loja de HQs que tem. Receba panini!
+        </div>
+    </footer>
+</body>
+</html>  </div>
