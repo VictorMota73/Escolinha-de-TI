@@ -1,1 +1,39 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazing Fantasy 15</title>
+    <link rel="stylesheet" href="spider.css">
+</head>
+<body>
+    <header>
+        <div class="content">
+            <div class="volta">
+                <a href="index.html">Menu</a>
+            </div>
+            <div class="carinho">
+                <a href="index.html"><img src="images/carrinhomerda.webp" alt="Carinhohuehue"></a>
+            </div>
+            <div class="header-block">
+                <div class="textos">
+                      <h2>Amazing Fantasy #15 Relançamento</h2>
+                      <h2>Descrição</h2>
+                      <p id="feio">
+                          A HQ que mudou tudo está de volta!
+                          Nesta edição histórica de 1962, testemunhe a primeira aparição do Homem-Aranha, 
+                          criado por Stan Lee e Steve Ditko. Conheça a origem de Peter Parker, o adolescente que,
+                          após ser picado por uma aranha radioativa, aprende que "com grandes poderes vêm grandes responsabilidades."
+                          Além da estreia do Teioso, essa edição traz outras histórias clássicas de ficção e suspense, como "The Bell-Ringer", 
+                          "Man in the Mummy Case" e "There Are Martians Among Us!", mantendo o clima misterioso que marcou a era de ouro da Marvel.
+                          Uma verdadeira joia dos quadrinhos, imperdível para fãs e colecionadores!
+                      </p>
+                      <p class="lindo">R$ 89,90 </p>
+                      <button type="button">Adicionar ao Carrinho</button>
+               </div>
+                 <img src="images/AmazingFantasy15.jpg" alt="AmazingFantasy15">
+            </div>
+         </div>
+    </header>
+</body>
+</html>
