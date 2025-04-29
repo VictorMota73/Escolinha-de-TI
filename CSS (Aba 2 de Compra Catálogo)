@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazing Fantasy 15</title>
+    <link rel="stylesheet" href="spider.css">
+</head>
+<body>
+    <header>
+        <div class="content">
+            <div class="volta">
+                <a href="index.html"><p>Menu</p></a>
+            </div>
+            <div class="header-block">
+                <div class="textos">
+                      <h2>Batman Cavaleiro das Trevas: Edição Definitiva</h2>
+                      <h2>Descrição</h2>
+                      <p id="feio">
+                        Em um futuro distópico, Gotham City está dominada pelo caos e pela violência. 
+                        Bruce Wayne está aposentado há anos, mas, diante da decadência da cidade, decide voltar a ser o Batman, 
+                        agora mais velho, brutal e implacável. Enfrentando gangues, a opinião pública, 
+                        a polícia e até antigos aliados como o Superman, ele trava uma guerra pessoal contra a criminalidade e contra o sistema. 
+                        A edição definitiva reúne as duas partes da saga: O Cavaleiro das Trevas e O Cavaleiro das Trevas 2, 
+                        oferecendo uma visão sombria e crítica da figura do herói em meio à decadência social e política.
+                      </p>
+                      <p class="lindo">R$ 112,00 </p>
+                      <button type="button">Adicionar ao Carrinho</button>
+               </div>
+                 <img src="images/BatmanCTDefinitivo.jpg" alt="Batmão">
+            </div>
+         </div>
+    </header>
+</body>
+</html>
