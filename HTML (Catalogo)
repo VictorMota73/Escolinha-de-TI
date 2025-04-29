@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CatálogoIrado</title>
+    <script src="lindo.js"></script>
     <link rel="stylesheet" href="irado.css">
 </head>
 <body>
@@ -14,23 +15,24 @@
                 <ul>
                     <li><a href="#catalog">Catálogo</a></li>
                     <li><a href="#about">Sobre</a></li>
-                    <li><a href="#features">Feature</a></li>
                     <button>Login</button>
                 </ul>
             </nav>
             <div class="header-block">
                <div class="text">
                <h2>Aqui temos os melhores quadrinhos pra você</h2>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum doloribus nulla consectetur ad fuga tenetur.</p>
+               <p>Aqui você encontra tudo que precisa, mergulhe em um desses mundos:</p>
                </div>
-               <img src="images/AmazingFantasy15.jpg" alt="HQ1">
+                    <a href="AmzgFtsy15.html"><img src="images/AmazingFantasy15.jpg" alt="HQ1" class="Slide"></a>
            </div>
         </div>
     </header>
     <section class="catalog" id="catalog">
        <div class="content">
-            <div class="tittle-wrapper-catalog"> temos tudos os quadrinhos e mangas que precisa</p>
+            <div class="tittle-wrapper-catalog">   
                 <h3>Catálogo</h3>
+                <p>temos todos os quadrinhos e mangas que você precisa</p>
+              
             </div>
                 <div class="filter-card">
                     <input 
@@ -45,35 +47,35 @@
                         <img src="images/Invencivel-HQ-1.jpg" alt="Invencible01"/>
                         <div class="card-content">
                             <h3>Invencivel #01</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis!</p>
+                            <p>R$ 19,90</p>
                             <button type="button">Comprar</button>
                         </div>
                     </div> <div class="card-item">
                         <img src="images/ZéCarioca2165.png" alt="ZeCarioca"/>
                         <div class="card-content">
                             <h3>Zé Carioca #2165</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident!</p>
+                            <p>R$ 19,90</p>
                             <button type="button">Comprar</button>
                         </div>
                     </div> <div class="card-item">
                         <img src="images/Spider-Man33.jpg" alt="SpiderMan33"/>
                         <div class="card-content">
                             <h3>Homem-Aranha #33</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem.</p>
+                            <p>R$ 89,90</p>
                             <button type="button">Comprar</button>
                         </div>
                     </div> <div class="card-item">
                         <img src="images/DragonBall01.jpg" alt="DragonBall01"/>
                         <div class="card-content">
                             <h3>Dragon Ball #01</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos?</p>
+                            <p>R$ 39,89</p>
                             <button type="button">Comprar</button>
                         </div>
                     </div> <div class="card-item">
                         <img src="images/FortinteGZ04.jpg" alt="FortinteGz04"/>
                         <div class="card-content">
                             <h3>Fortine Guerra Zero #04</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam!</p>
+                            <p>R$ </p>
                             <button type="button">Comprar</button>
                         </div>
                     </div> <div class="card-item">
@@ -102,7 +104,7 @@
                         <div class="card-content">
                             <h3>Amazing Fantasy #15</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime.</p>
-                            <button type="button">Comprar</button>
+                            <a href="AmzgFtsy15.html"><button type="button">Comprar</button></a>
                         </div>
                     </div> <div class="card-item">
                         <img src="images/Spawn01.jpg" alt="Spawn01"/>
@@ -133,8 +135,8 @@
     <section class="about" id="about">
         <div class="content">
             <div class="tittle-wrapper-about">
-                <p>conheça mais um pouco sobre nós</p>
                 <h3>Sobre</h3>
+                <p>conheça mais um pouco sobre nós</p>
             </div>
            <div class="about-content">
             <div class="left">
@@ -143,88 +145,36 @@
             <div class="right">
                 <h3>Entre no melhor dos mundos da ficção</h3>
                 <p>
-                    Lorem ipsum dolor sit, amet consectet
-                    ur adipisicing elit. Odio alias dolorum dolore, 
-                    nulla doloribus laborum sequi temporibus.
-                    Velit nobis tempore voluptatum, vel doloremque voluptatibus! Iusto accusamus
-                    id vero esse magni assumenda quae eius repudiandae. Laborum,
-                    assumenda quam! Reiciendis consectetur quos saepe eveniet, 
-                    cum eligendi! Alias nobis dolorum id minus dolorem aspernatur similique voluptatem!
-                    Ipsum fugiat quos, nulla, totam laborum omnis minus porro illo provident fuga, ratione ut!
-                    Ipsa veniam molestias quidem voluptatem fugit dicta.
-                    Harum ipsum provident enim error illum numquam sit obcaecati ex voluptat
-                    em odit, vero voluptates fuga in est d
-                    ignissimos nobis, adipisci odio. Dolorum 
-                    quaerat eius hic ratione?
+                    Na SuperHQs, nossa missão é simples: conectar apaixonados por histórias com os melhores quadrinhos e mangás do mercado. 
+                    Somos uma loja especializada que respira cultura pop, oferecendo uma curadoria completa dos
+                    lançamentos mais quentes até os clássicos mais amados, tudo em um só lugar. Aqui você encontra desde as grandes 
+                    sagas da Marvel e da DC até obras-primas do universo indie. E para os fãs de mangás, preparamos uma seleção imperdível
+                    — dos sucessos de venda aos títulos cult que marcaram gerações.
+                    Trabalhamos com produtos novos, colecionáveis e edições limitadas, sempre prezando pela qualidade e pelo cuidado em cada envio.
+                    Seja você um leitor iniciante ou um colecionador de longa data, 
+                    a SuperHQs é o seu portal para aventuras épicas, emoções intensas e mundos extraordinários. 
+                    Entre, explore e viv
+                            <p>a cada página. SuperHQs — seu multiverso de histórias começa aqui.
                 </p>
            </div>
          </div>
         </div>
     </section>
-    <section class="feature" id="features">
-            <div class="content">
-                <div class="tittle-wrapper-feature">
-                    <p>Blá Blá Blá</p>
-                    <h3>Blé Blé Blé</h3>
-                </div>
-                <div class="feature-card-block">
-                    <div class="feature-card-item">
-                        <img src="images/Bang.png" alt="Bang"/>
-                        <div class="feature-text-content">
-                          <h3>Titulo</h3>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                       </div>
-                    </div>
-                    <div class="feature-card-item">
-                        <img src="images/Boom.png" alt="Boom"/>
-                        <div class="feature-text-content">
-                          <h3>Titulo</h3>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </div>
-                    <div class="feature-card-item">
-                      <img src="images/Wham.png" alt="Wham"/>
-                       <div class="feature-text-content">
-                          <h3>Titulo</h3>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                       </div>
-                    </div>
-                    <div class="feature-card-item">
-                     <img src="images/Zap.png" alt="Zap"/>
-                       <div class="feature-text-content">
-                          <h3>Titulo</h3>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                       </div>
-                    </div>
-            </div>
-        </div>
-    </section>
     <footer>
         <div class="main">
             <div class="content footer-links">
-                <div class="footer-company">
-                    <h4>SuperHQs</h4>
-                    <h6>Sobre</h6>
-                    <h6>Contato</h6>
-                </div>
-                <div class="footer-rental">
-                     <h4>Serviços</h4>
-                     <h6>Política de privacidade</h6>
-                     <h6>Termos e Condições</h6>
-                     <h6>Ajuda</h6>
-                </div>
                 <div class="footer-social">
                      <h4>Redes sociais</h4>
                      <div class="social-icon">
-                            <img src="images/youtube.png" alt="Youtube">
-                            <img src="images/twitter.png" alt="EscóriadaHumanidade">
-                            <img src="images/instagram.png" alt="Insta">
+                           <a href="https://www.youtube.com/@BNE.empregos" target="_blank"><img src="images/youtube.png" alt="Youtube"></a> 
+                            <a href="https://x.com/LulaOficial" target="_blank"><img src="images/twitter.png" alt="EscóriadaHumanidade"></a>
+                            <a href= " https://www.instagram.com/bneempregos/" target="_blank"><img src="images/instagram.png" alt="Insta"></a>
                      </div>
                 </div>
                 <div class="footer-contact">
                     <h4>Entre em contato</h4>
-                    <h6>cantatolegal@SuperHqs.com.br</h6>
-                    <h6>+55 41 9293-8936</h6>
+                    <h6>sergioroberto@bne.com.b</h6>
+                    <h6>+55 41 9118-9831</h6>
                 </div>
             </div>
         </div>
@@ -233,4 +183,4 @@
         </div>
     </footer>
 </body>
-</html>  </div>
+</html>
