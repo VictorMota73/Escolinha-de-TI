@@ -1,0 +1,40 @@
+const apikey="50a36275a72965c0e3317b048972b72e";
+
+const Cidadi= document.querySelector("#CidadeInput");
+const Procurar= document.querySelector("#procure");
+
+const elementoCidadi=document.querySelector("#Cidade");
+const elementoTemp=document.querySelector("#Temperatura span");
+const elementoDesc=document.querySelector("#detalhes-descricao");
+//const elementoClimaIcone=document.querySelector("#");
+//const elementoCidadi=document.querySelector("#Cidade");
+const elementoUmidade=document.querySelector("#umidade span");
+const elementoVento=document.querySelector("#vento span");
+const lindo=document.querySelector("#Clima");
+
+const Tacerto=async(city)=>{
+    const APIURL=`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apikey}&lang=pt_br`;
+    const res=await fetch(APIURL)
+    const data= await res.json();
+   return data;
+}
+const MostraClima= async(city)=>{
+    const data=await Tacerto(city);
+    elementoCidadi.innerText= data.name;
+    elementoTemp.innerText= parseInt(data.main.temp);
+    elementoDesc.innerText= data.weather[0].description;
+    elementoUmidade.innerText= `${data.main.humidity}%`;
+    elementoVento.innerText= `${data.wind.speed}km/h`;
+    lindo.classList.remove("hide");
+}
+Procurar.addEventListener("click", (e) => {
+    e.preventDefault();
+    const city=Cidadi.value;
+    MostraClima(city);
+})
+Cidadi.addEventListener("keyup", (e)=>{
+    if(e.code==="Enter"){
+        const city=e.target.value;
+        MostraClima(city);
+    }
+})
