@@ -1,4 +1,4 @@
-const apikey="50a36275a72965c0e3317b048972b72e";
+//const apikey=coloque sua key aqui
 
 const Cidadi= document.querySelector("#CidadeInput");
 const Procurar= document.querySelector("#procure");
