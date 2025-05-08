@@ -54,27 +54,31 @@
     font-weight: bold;
     text-transform: capitalize;
   }
+  #map { 
+    width: 500px;
+    height: 300px;
+ }
   /*Clima*/
   #Clima{
       border-top: 1px solid #fff;
       margin-top: 1.5rem;
       padding-top: 1.5rem;
-      text-align: center;
+      text-align: end;
+      width: 1000px;
   }
   #Clima h2{
       display: flex;
-      justify-content: center;
+      justify-content: right;
       align-items: center;
       margin-bottom: 0.6rem;
   }
   #detalhes-container{
       display: flex;
-      justify-content: center;
+      justify-content: right;
       align-items: center;
   }
   #detalhes-container #umidade{
       border-right: 1px solid #fff;
       margin: 0.6rem;
       padding: 0.6rem;
-     
   }
