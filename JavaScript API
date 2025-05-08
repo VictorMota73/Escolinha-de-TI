@@ -1,16 +1,35 @@
-//const apikey=coloque sua key aqui
+const apikey="Sua Key Aqui";
 
 const Cidadi= document.querySelector("#CidadeInput");
 const Procurar= document.querySelector("#procure");
+var map=L.map('map');
+map.setView([51.505, -0.09], 13);
 
 const elementoCidadi=document.querySelector("#Cidade");
 const elementoTemp=document.querySelector("#Temperatura span");
 const elementoDesc=document.querySelector("#detalhes-descricao");
-//const elementoClimaIcone=document.querySelector("#");
-//const elementoCidadi=document.querySelector("#Cidade");
 const elementoUmidade=document.querySelector("#umidade span");
 const elementoVento=document.querySelector("#vento span");
 const lindo=document.querySelector("#Clima");
+
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{
+    maxZoom:19,
+    attribution:'&copy; OpenStreetMap contributors'
+}).addTo(map);
+
+const Zoom=async(city)=>{
+    const resposta=await fetch(
+        `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(city)}`
+    );
+    const data=await resposta.json();
+    if(data && data.length>0){
+        const boxta=data[0].boundingbox;
+        map.fitBounds([
+            [parseFloat (boxta[0]),parseFloat (boxta[2])],
+            [parseFloat (boxta[1]), parseFloat(boxta[3])]
+        ]);
+    }
+}
 
 const Tacerto=async(city)=>{
     const APIURL=`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apikey}&lang=pt_br`;
@@ -26,15 +45,21 @@ const MostraClima= async(city)=>{
     elementoUmidade.innerText= `${data.main.humidity}%`;
     elementoVento.innerText= `${data.wind.speed}km/h`;
     lindo.classList.remove("hide");
-}
-Procurar.addEventListener("click", (e) => {
+    setTimeout(() => {
+        map.invalidateSize();
+    }, 200);
+ };
+
+Procurar.addEventListener("click",async (e) => {
     e.preventDefault();
     const city=Cidadi.value;
-    MostraClima(city);
+    await MostraClima(city);
+    await Zoom(city);
 })
-Cidadi.addEventListener("keyup", (e)=>{
+Cidadi.addEventListener("keyup", async (e)=>{
     if(e.code==="Enter"){
         const city=e.target.value;
-        MostraClima(city);
+        await MostraClima(city);
+        await Zoom(city);
     }
 })
