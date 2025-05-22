@@ -294,7 +294,7 @@ footer .main{
   justify-content: space-between;
   margin-top: 20px;
 }
- .footer-contact, .footer-social{
+ .footer-social{
   color:#3062f9;
   height: 100%;
   min-height: 100px;
@@ -327,9 +327,4 @@ footer img:hover{
   cursor: pointer;
   width: 40px;
   height: auto;
-}
-.footer-contact h6:hover{
-  cursor: pointer;
-  color: #122b75;
-  font-size: 20px;
 }
